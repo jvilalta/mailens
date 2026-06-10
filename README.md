@@ -22,11 +22,7 @@ Mailens acts as a virtual mail layer between your email provider and your mail c
 
 ## Architecture (high level)
 
-Mail Client (IMAP/JMAP)
-        ↓
-     Mailens
-        ↓
-Provider adapters (Gmail / Fastmail / IMAP / etc.)
+Mail Client (IMAP/JMAP) => Mailens => Provider adapters (Gmail / Fastmail / IMAP / etc.)
 
 Mailens normalizes all mail into a common internal model and applies policy before exposing it to clients.
 
